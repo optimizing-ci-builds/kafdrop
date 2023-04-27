@@ -23,6 +23,7 @@
         <protobuf.version>3.21.5</protobuf.version>
         <testcontainers.version>1.17.3</testcontainers.version>
         <kafka-libs.version>7.2.1</kafka-libs.version>
+        <skip.docker.resources>false</skip.docker.resources>
     </properties>
 
     <scm>
@@ -280,6 +281,7 @@
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
+                            <skip>${skip.docker.resources}</skip>
                         </configuration>
                     </execution>
                 </executions>
