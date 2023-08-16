@@ -16,7 +16,7 @@ def _main():
         timestamp = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ')
         with open(log_file, "a") as f:
             f.write(f"{timestamp};{path};{filename};{','.join(type_names)}\n")
-            f.flush()
+            # f.flush()
         
 if __name__ == '__main__':
     _main()
